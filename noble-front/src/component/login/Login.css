@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+.login-body {
+  background: #e0e0e0;
+  height: 100vh; /* 화면 전체 높이 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-main {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+  font-family: "Comfortaa", cursive;
+  border-radius: 50px;
+  margin-bottom: 15%;
+}
+
+.login-form {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 45px;
+  text-align: center;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: -11px 11px 22px #bebebe, 11px -11px 22px #ffffff;
+}
+
+.login-form input {
+  outline: 0;
+  background: #e0e0e0;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Comfortaa", cursive;
+}
+
+.login-form input:focus {
+  background: #e0e0e0;
+}
+
+.login-form button {
+  font-family: "Comfortaa", cursive;
+  text-transform: uppercase;
+  outline: 0;
+  background: #e0e0e0;
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.login-form button:active {
+  background: #e9e9e9;
+  color: #000;
+}
+.login-segment {
+  text-align: center;
+  display: flex;
+}
+
+.unit {
+  border-radius: 8px;
+  line-height: 0;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  font-size: 19.2px;
+  margin-bottom: -10%;
+}
+.icon-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.unit img {
+  width: 25px;
+  height: 25px;
+  transition: all 0.3s ease;
+  filter: grayscale(100%) brightness(0.8); /* 기본적으로 회색조 */
+}
+.unit:hover img {
+  filter: none; /* 원래 색상 */
+}
+/* 아이디 기억하기 체크박스 스타일 */
+
+/* 체크박스 커스텀 스타일 */
+.remember-me {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  gap: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/* 숨긴 기본 체크박스 */
+.remember-me input {
+  display: none;
+}
+
+/* 커스텀 체크박스 스타일 */
+.remember-me .custom-checkbox {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #666;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 7%;
+  margin-bottom: 0.5%;
+}
+
+/* 체크박스가 선택되었을 때 */
+.remember-me input:checked + .custom-checkbox {
+  background-color: #fff;
+  border-color: #e9e9e9;
+}
+
+.remember-me input:checked + .custom-checkbox::after {
+  content: "✔";
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center; /* 오른쪽 정렬 */
+  margin-top: 10%; /* 로그인 창과의 간격 줄이기 */
+}
+
+.signup-button {
+  background: none;
+  border: none;
+  color: #333; /* 글자 색상 */
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.signup-button:hover {
+  text-decoration: underline; /* 호버 시 밑줄 효과 */
+}
