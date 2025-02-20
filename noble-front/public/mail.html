@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Envelope (Contact-Form)</title>
+  <link rel="stylesheet" href="./mail.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class="container">
+  <div class="envelope">
+    <div class="back"></div>
+    <div class="letter-wrap">
+      <form class="letter">
+        <p>
+          <label>Name:</label>
+          <input type="text" name="name" />
+        </p>
+        <p>
+          <label>Email:</label>
+          <input type="email" name="email" />
+        </p>
+        <p>
+          <label>Message:</label>
+          <textarea></textarea>
+        </p>
+        <input class="send" type="submit" value="Send"/>
+      </form>
+    </div>
+    <div class="front">
+      <div class="inner">
+        <div class="triangle left"></div>
+        <div class="triangle right"></div>
+        <div class="rounded"></div>
+        <div class="bottom"></div>
+      </div>
+    </div>
+    <div class="cover">
+      <div class="top-wrap backface">
+        <div class="inner">
+          <div class="top-center"></div>
+          <div class="top"></div>
+        </div>
+      </div>
+      <div class="top-wrap frontface">
+        <div class="inner">
+          <div class="top-center"></div>
+          <div class="top"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="notif">Your Message Was Sent Successfully Thanks!</p>
+</div>
+<!-- partial -->
+ <script>
+  function sendHeight() {
+    const height = document.documentElement.scrollHeight;
+    window.parent.postMessage({ type: "setHeight", height }, "*");
+  }
+
+  window.onload = sendHeight;
+  window.onresize = sendHeight;
+</script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script  src="./mail.js"></script>
+
+</body>
+</html>

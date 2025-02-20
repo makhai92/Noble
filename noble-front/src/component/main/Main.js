@@ -15,25 +15,25 @@ const Main = () => {
                 <ul className="macbook-apps">
                   <li
                     className="macbook-app-icon"
-                    onClick={() => navigate("/mail")}
+                    onClick={() => navigate("/board")}
                   >
                     <img src="./img/board.png" alt="Board Icon" />
                   </li>
                   <li
                     className="macbook-app-icon"
-                    onClick={() => navigate("/mail")}
+                    onClick={() => navigate("/calendar")}
                   >
                     <img src="./img/calendar.png" alt="Calendar Icon" />
                   </li>
                   <li
                     className="macbook-app-icon"
-                    onClick={() => navigate("/mail")}
+                    onClick={() => navigate("/content")}
                   >
                     <img src="./img/content.png" alt="Content Icon" />
                   </li>
                   <li
                     className="macbook-app-icon"
-                    onClick={() => navigate("/mail")}
+                    onClick={() => navigate("/todolist")}
                   >
                     <img src="./img/todolist.png" alt="Todolist Icon" />
                   </li>

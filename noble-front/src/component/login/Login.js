@@ -41,14 +41,14 @@ const Login = () => {
               <button className="unit" type="button">
                 <img
                   src="./img/naver.png"
-                  alt="KakaoTalk Logo"
+                  alt="Naver Logo"
                   className="icon-image"
                 />
               </button>
               <button className="unit" type="button">
                 <img
                   src="./img/google.png"
-                  alt="KakaoTalk Logo"
+                  alt="Google Logo"
                   className="icon-image"
                 />
               </button>
